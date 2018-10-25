@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_root_anchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #230930;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketing.controller.Cash_lanesController">
+   <children>
+      <AnchorPane fx:id="priority" layoutX="1.0" layoutY="288.0" prefHeight="566.0" prefWidth="1920.0" style="-fx-background-color: #230930;">
+         <children>
+            <Button id="priority_button" fx:id="priority_py" alignment="BOTTOM_LEFT" focusTraversable="false" layoutX="1081.0" layoutY="139.0" mnemonicParsing="false" onAction="#priority_pyOnclick" prefHeight="245.0" prefWidth="293.0" stylesheets="@../css/UserPage.css" text="Priority" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="cashier_lanes" fx:id="payment_priority" alignment="BOTTOM_LEFT" focusTraversable="false" layoutX="593.0" layoutY="141.0" mnemonicParsing="false" onAction="#pp_OnClick" prefHeight="245.0" prefWidth="293.0" stylesheets="@../css/UserPage.css" text="Regular" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <FontAwesomeIconView blendMode="SCREEN" caretBias="false" glyphName="PRODUCT_HUNT" glyphStyle="-fx-fill: linear-gradient(#ffff 0%, #ffff 70%, #ffff 85%);" layoutX="1155.0" layoutY="295.0" size="100" textAlignment="CENTER" wrappingWidth="145.00001250952482">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView caretBias="false" glyphName="REGISTERED" glyphStyle="-fx-fill: linear-gradient(#ffff 0%, #ffff 70%, #ffff 85%);" layoutX="667.0" layoutY="295.0" size="100" textAlignment="CENTER" wrappingWidth="145.0000170469284">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="back_button" caretBias="false" glyphName="ANGLE_LEFT" glyphStyle="-fx-fill: linear-gradient(#ffff 0%, #ffff 70%, #ffff 85%);" layoutX="76.0" layoutY="374.0" onMouseClicked="#OnClick_Back" size="320" textAlignment="CENTER" wrappingWidth="196.33333003520966">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <Label layoutX="200.0" layoutY="254.0" prefHeight="35.0" prefWidth="54.0" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="682.0" layoutY="40.0" prefHeight="118.0" prefWidth="549.0">
+         <children>
+            <Label alignment="CENTER" layoutX="-2.0" layoutY="10.0" prefHeight="38.0" prefWidth="549.0" text="Philhealth Health Insurance Corporation" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="549.0" text="Republic of the Philippines" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="-3.0" layoutY="36.0" prefHeight="38.0" prefWidth="549.0" text="PHILHEALTH REGIONAL OFFICE XI" textAlignment="CENTER" textFill="#59cb52">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="72.0" prefHeight="46.0" prefWidth="549.0" text="Valgosons Bldg., Bolton Extension &#10;Poblacion, Davao City" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="86.0" fitWidth="68.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/logo2.png" />
+               </image>
+               <effect>
+                  <Glow level="0.11" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="lhioname" alignment="CENTER" layoutX="133.0" layoutY="61.0" prefHeight="38.0" prefWidth="145.0" textFill="#099be0" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="soaddress" alignment="CENTER" layoutX="143.0" layoutY="71.0" prefHeight="38.0" prefWidth="145.0" textFill="#099be0" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
